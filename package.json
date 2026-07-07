@@ -6,7 +6,9 @@
   "scripts": {
     "sync": "node scripts/sync-proposal.js",
     "predocs:dev": "npm run sync",
-    "docs:dev": "vitepress dev docs --port 4321",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
     "predev": "npm run sync",
     "dev": "vitepress dev docs --port 4321",
     "prestart": "npm run sync",

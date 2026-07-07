@@ -1,4 +1,5 @@
 export default {
+  base: process.env.BASE_URL || "/",
   lang: "es-CO",
   title: "Dale Pues MVP",
   description: "Propuesta comercial y técnica para la plataforma Dale Pues.",
