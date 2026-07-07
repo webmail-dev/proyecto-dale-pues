@@ -1,0 +1,22 @@
+{
+  "name": "dale-pues-propuesta-site",
+  "version": "1.0.0",
+  "description": "Sitio VitePress profesional para la propuesta Dale Pues MVP.",
+  "private": true,
+  "scripts": {
+    "sync": "node scripts/sync-proposal.js",
+    "predocs:dev": "npm run sync",
+    "docs:dev": "vitepress dev docs --port 4321",
+    "predev": "npm run sync",
+    "dev": "vitepress dev docs --port 4321",
+    "prestart": "npm run sync",
+    "start": "npm run docs:dev -- --host 0.0.0.0",
+    "prebuild": "npm run sync",
+    "build": "vitepress build docs",
+    "prepreview": "npm run build",
+    "preview": "vitepress preview docs --port 4321"
+  },
+  "dependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
